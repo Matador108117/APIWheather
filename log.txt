@@ -1,0 +1,33 @@
+[2025-05-14T12:57:44.281469700] Ciudad: Veracruz | Proveedor: openweather | Temp: 0,0°C | Condición: Sin datos
+[2025-05-14T13:13:05.919303300] Ciudad: Veracruz | Proveedor: openweather | Temp: 22,8°C | Condición: few clouds
+[2025-05-14T13:18:42.717331600] Ciudad: Veracruz | Proveedor: weatherapi | Temp: 22,2°C | Condición: Overcast
+[2025-05-14T13:18:50.507887700] Ciudad: Veracruz | Proveedor: openweather | Temp: 22,8°C | Condición: few clouds
+[2025-05-14T13:20:24.165209900] Ciudad: Veracruz | Proveedor: weatherbit | Temp: 22,0°C | Condición: Clear sky
+[2025-05-14T13:24:37.392162900] Ciudad: Veracyz | Proveedor: openweather | Temp: 0,0°C | Condición: Sin datos
+[2025-05-14T13:24:45.987083800] Ciudad: Queretaro | Proveedor: openweather | Temp: 20,6°C | Condición: clear sky
+[2025-05-14T13:24:57.113979600] Ciudad: Orizaba | Proveedor: openweather | Temp: 20,0°C | Condición: scattered clouds
+[2025-05-14T13:25:05.692166700] Ciudad: Sumidero | Proveedor: openweather | Temp: 23,9°C | Condición: broken clouds
+[2025-05-14T13:25:15.216071] Ciudad: sumidero | Proveedor: weatherapi | Temp: 20,2°C | Condición: Sunny
+[2025-05-14T13:25:25.212144100] Ciudad: sumidero | Proveedor: weatherbit | Temp: 26,7°C | Condición: Scattered clouds
+[2025-05-14T13:25:39.761072600] Ciudad: Ixtaczoquitlan | Proveedor: openweather | Temp: 18,2°C | Condición: scattered clouds
+[2025-05-14T13:25:50.700428500] Ciudad: Ixtaczoquitl�n | Proveedor: weatherapi | Temp: 0,0°C | Condición: Sin datos
+[2025-05-14T13:26:00.660495500] Ciudad: Ixtaczoquitlan | Proveedor: weatherapi | Temp: 0,0°C | Condición: Sin datos
+[2025-05-14T13:26:21.153160200] Ciudad: Ixtaczoquitlan | Proveedor: weatherbit | Temp: 18,6°C | Condición: Clear sky
+[2025-05-15T19:57:14.391342402] Ciudad: orizaba | Proveedor: weatherapi | Temp: 26.0°C | Condición: Sunny
+[2025-05-15T19:57:32.372835858] Ciudad: orizaba | Proveedor: openweather | Temp: 22.4°C | Condición: broken clouds
+[2025-05-15T19:58:00.357941844] Ciudad: Ciudad mendoza veracruz | Proveedor: openweather | Temp: 0.0°C | Condición: Sin datos
+[2025-05-15T19:58:19.241232108] Ciudad: ciudad mendoza | Proveedor: openweather | Temp: 0.0°C | Condición: Sin datos
+[2025-05-15T19:58:29.616505624] Ciudad: xalapa | Proveedor: weatherbit | Temp: 18.2°C | Condición: Clear sky
+[2025-05-15T19:58:40.182069436] Ciudad: veracrux | Proveedor: weatherapi | Temp: 0.0°C | Condición: Sin datos
+[2025-05-15T19:58:53.426780804] Ciudad: veracruz | Proveedor: weatherbit | Temp: 27.5°C | Condición: Clear sky
+[2025-05-15T19:59:12.535970377] Ciudad: camerino z mendoza | Proveedor: openweather | Temp: 0.0°C | Condición: Sin datos
+[2025-05-15T19:59:27.330428613] Ciudad: mendoza | Proveedor: weatherapi | Temp: 17.1°C | Condición: Clear
+[2025-05-15T19:59:51.261112930] Ciudad: cordoba  | Proveedor: weatherbit | Temp: 0.0°C | Condición: Sin datos
+[2025-05-15T20:00:07.494300931] Ciudad: cordoba | Proveedor: openweather | Temp: 21.8°C | Condición: overcast clouds
+[2025-05-16T13:35:00.458074035] Ciudad: veracruz | Proveedor: weatherapi | Temp: 36.2°C | Condición: Partly Cloudy
+[2025-05-16T13:35:18.640548477] Ciudad: veracruz  | Proveedor: openweather | Temp: 0.0°C | Condición: Sin datos
+[2025-05-16T13:35:31.966612426] Ciudad: veracruz | Proveedor: weatherbit | Temp: 34.1°C | Condición: Clear sky
+[2025-05-16T13:36:05.739182062] Ciudad: Orizaba  | Proveedor: openweather | Temp: 0.0°C | Condición: Sin datos
+[2025-05-16T13:36:14.749910829] Ciudad: cordoba  | Proveedor: openweather | Temp: 0.0°C | Condición: Sin datos
+[2025-05-16T13:36:25.923445389] Ciudad: veracruz | Proveedor: openweather | Temp: 38.2°C | Condición: few clouds
+[2025-05-16T13:36:52.128541548] Ciudad: veracruz | Proveedor: openweather | Temp: 38.2°C | Condición: few clouds

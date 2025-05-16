@@ -1,0 +1,11 @@
+com\example\joshi\logic\OpenWeatherProvider.class
+com\example\joshi\domain\WeatherRequest.class
+com\example\joshi\adapter\OpenWeatherAdapter.class
+com\example\joshi\app\WeatherApp.class
+com\example\joshi\domain\WeatherProviderFactory.class
+com\example\joshi\domain\WeatherData.class
+com\example\joshi\logic\WeatherbitProvider.class
+com\example\joshi\Main.class
+com\example\joshi\domain\WeatherProvider.class
+com\example\joshi\logic\WeatherAPIProvider.class
+com\example\joshi\domain\LoggerUtil.class
