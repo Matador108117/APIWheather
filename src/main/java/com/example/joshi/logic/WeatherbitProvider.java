@@ -14,7 +14,7 @@ public class WeatherbitProvider implements WeatherProvider {
     private static final String API_KEY = "39fc3d1756e4493c994d703aca14941a";
 
     @Override
-    public WeatherData fetch(WeatherRequest request) {
+    public WeatherData fetch(WeatherRequest request) throws NumberFormatException {
         String city = request.getCity();
         String urlString = "https://api.weatherbit.io/v2.0/current?city=" +
                 city + "&key=" + API_KEY;

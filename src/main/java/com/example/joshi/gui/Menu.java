@@ -4,12 +4,18 @@ import java.util.Scanner;
 
 import com.example.joshi.domain.LoggerUtil;
 import com.example.joshi.domain.WeatherData;
-import com.example.joshi.domain.WeatherProvider;
-import com.example.joshi.domain.WeatherRequest;
 import com.example.joshi.domain.factory.WeatherProviderFactory;
+import com.example.joshi.logic.WheatherService;
 import com.example.joshi.shared.Messages;
 
 public class Menu {
+    private WeatherProviderFactory factory; // implementar inyeccion de dependencias
+    private WheatherService serv;
+
+    public Menu() {
+        serv = new WheatherService();
+    }
+
     public void startMenu() {
         Scanner scanner = new Scanner(System.in);
         String providerName = "";
@@ -33,10 +39,7 @@ public class Menu {
             }
 
             if (providerName != "") {
-                WeatherRequest request = new WeatherRequest(city);
-                WeatherProvider provider = WeatherProviderFactory.getProvider(providerName);
-                WeatherData data = provider.fetch(request);
-
+                WeatherData data = serv.selectWheather(city, providerName, factory);
                 Messages.RESULT.printWith(data.toString());
                 LoggerUtil.log(city, providerName, data.getTemperature(), data.getCondition());
                 Messages.SEPARATOR.print();
