@@ -31,3 +31,7 @@
 [2025-05-16T13:36:14.749910829] Ciudad: cordoba  | Proveedor: openweather | Temp: 0.0°C | Condición: Sin datos
 [2025-05-16T13:36:25.923445389] Ciudad: veracruz | Proveedor: openweather | Temp: 38.2°C | Condición: few clouds
 [2025-05-16T13:36:52.128541548] Ciudad: veracruz | Proveedor: openweather | Temp: 38.2°C | Condición: few clouds
+[2025-05-16T13:56:18.224255095] Ciudad: cuitlahuac | Proveedor: weatherapi | Temp: 34.9°C | Condición: Sunny
+[2025-05-16T13:56:53.631472339] Ciudad: yanga | Proveedor: openweather | Temp: 37.8°C | Condición: scattered clouds
+[2025-05-16T13:57:14.911647281] Ciudad: tegucigalpa | Proveedor: weatherbit | Temp: 30.0°C | Condición: Few clouds
+[2025-05-16T14:43:11.626679614] Ciudad: orizaba | Proveedor: openweather | Temp: 31.8°C | Condición: light rain
