@@ -3,6 +3,9 @@ package com.example.joshi.domain;
 public class WeatherData {
     private double temperature;
     private String condition;
+    
+    public WeatherData() {
+    }
 
     public WeatherData(double temperature, String condition) {
         this.temperature = temperature;

@@ -5,15 +5,17 @@ import java.util.Scanner;
 import com.example.joshi.domain.LoggerUtil;
 import com.example.joshi.domain.WeatherData;
 import com.example.joshi.domain.factory.WeatherProviderFactory;
-import com.example.joshi.logic.WheatherService;
+import com.example.joshi.logic.WeatherService;
+import com.example.joshi.logic.WeatherService.WeatherException;
 import com.example.joshi.shared.Messages;
+
 
 public class Menu {
     private WeatherProviderFactory factory; // implementar inyeccion de dependencias
-    private WheatherService serv;
+    private WeatherService serv;
 
     public Menu() {
-        serv = new WheatherService();
+        serv = new WeatherService();
     }
 
     public void startMenu() {
@@ -38,14 +40,17 @@ public class Menu {
                 default -> Messages.INVALID_OPTION.print();
             }
 
-            if (providerName != "") {
-                WeatherData data = serv.selectWheather(city, providerName, factory);
-                Messages.RESULT.printWith(data.toString());
-                LoggerUtil.log(city, providerName, data.getTemperature(), data.getCondition());
-                Messages.SEPARATOR.print();
+            if (!providerName.isEmpty()) {
+                try {
+                    WeatherData data = serv.getWeather(providerName, city);
+                    Messages.RESULT.printWith(data.toString());
+                    LoggerUtil.log(city, providerName, data.getTemperature(), data.getCondition());
+                    Messages.SEPARATOR.print();
+                } catch (WeatherException e) {
+                    System.err.println("Error al consultar el clima: " + e.getMessage());
+                }
             }
         }
-
         Messages.END.print();
         scanner.close();
     }
