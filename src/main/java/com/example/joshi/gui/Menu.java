@@ -5,21 +5,22 @@ import java.util.Scanner;
 import com.example.joshi.domain.LoggerUtil;
 import com.example.joshi.domain.WeatherData;
 import com.example.joshi.domain.builder.WeatherDirector;
+import com.example.joshi.domain.singleton.WeatherSingleton;
 import com.example.joshi.logic.WheatherService;
 import com.example.joshi.shared.Messages;
 
 public class Menu {
-    private WeatherDirector director; // implementar inyeccion de dependencias con base a singletone
+    private WeatherDirector director;
     private WheatherService serv;
 
     public Menu() {
         serv = new WheatherService();
-        director = new WeatherDirector();
+        director = WeatherSingleton.getInstance().getDirector();
     }
 
     public void startMenu() {
         Scanner scanner = new Scanner(System.in);
-        String providerName = "";
+        String providerName;
 
         while (true) {
             providerName = "";
@@ -39,7 +40,7 @@ public class Menu {
                 default -> Messages.INVALID_OPTION.print();
             }
 
-            if (providerName != "") {
+            if (!providerName.isEmpty()) {
                 WeatherData data = serv.selectWheather(city, providerName, director);
                 Messages.RESULT.printWith(data.toString());
                 LoggerUtil.log(city, providerName, data.getTemperature(), data.getCondition());
