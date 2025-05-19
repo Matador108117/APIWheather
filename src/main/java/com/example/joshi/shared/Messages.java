@@ -15,7 +15,13 @@ public enum Messages {
     INVALID_OPTION("Opción no válida"),
     RESULT("Resultado: "),
     SEPARATOR("----------------------------"),
-    END("Programa finalizado.");
+    END("Programa finalizado."),
+    ERROR_INVALID_URL("La URL proporcionada es inválida."),
+    ERROR_CONNECTION("No se pudo establecer conexión con el servicio climático."),
+    ERROR_JSON_PARSE("Error al interpretar la respuesta JSON del proveedor."),
+    ERROR_UNEXPECTED("Ha ocurrido un error inesperado."),
+    NOT_FOND_APP_PROPERTIES("No se encontro el archivo app.properties"),;
+
 
     private final String message;
 

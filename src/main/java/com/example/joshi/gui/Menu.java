@@ -4,16 +4,17 @@ import java.util.Scanner;
 
 import com.example.joshi.domain.LoggerUtil;
 import com.example.joshi.domain.WeatherData;
-import com.example.joshi.domain.factory.WeatherProviderFactory;
+import com.example.joshi.domain.builder.WeatherDirector;
 import com.example.joshi.logic.WheatherService;
 import com.example.joshi.shared.Messages;
 
 public class Menu {
-    private WeatherProviderFactory factory; // implementar inyeccion de dependencias
+    private WeatherDirector director; // implementar inyeccion de dependencias con base a singletone
     private WheatherService serv;
 
     public Menu() {
         serv = new WheatherService();
+        director = new WeatherDirector();
     }
 
     public void startMenu() {
@@ -39,7 +40,7 @@ public class Menu {
             }
 
             if (providerName != "") {
-                WeatherData data = serv.selectWheather(city, providerName, factory);
+                WeatherData data = serv.selectWheather(city, providerName, director);
                 Messages.RESULT.printWith(data.toString());
                 LoggerUtil.log(city, providerName, data.getTemperature(), data.getCondition());
                 Messages.SEPARATOR.print();

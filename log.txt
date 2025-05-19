@@ -35,3 +35,19 @@
 [2025-05-16T13:56:53.631472339] Ciudad: yanga | Proveedor: openweather | Temp: 37.8°C | Condición: scattered clouds
 [2025-05-16T13:57:14.911647281] Ciudad: tegucigalpa | Proveedor: weatherbit | Temp: 30.0°C | Condición: Few clouds
 [2025-05-16T14:43:11.626679614] Ciudad: orizaba | Proveedor: openweather | Temp: 31.8°C | Condición: light rain
+[2025-05-18T22:34:46.228725747] Ciudad: veracruz | Proveedor: weatherapi | Temp: 28.1°C | Condición: Partly cloudy
+[2025-05-18T23:09:18.384758565] Ciudad: salie | Proveedor: weatherapi | Temp: 0.0°C | Condición: Sin datos
+[2025-05-18T23:12:35.022462459] Ciudad: veracruz | Proveedor: weatherbit | Temp: 27.8°C | Condición: Scattered clouds
+[2025-05-18T23:55:17.759820648] Ciudad: veracruz | Proveedor: openweather | Temp: 0.0°C | Condición: sin datos
+[2025-05-18T23:55:26.117090341] Ciudad: 2 | Proveedor: weatherapi | Temp: 24.0°C | Condición: Clear sky
+[2025-05-18T23:55:36.357559824] Ciudad: veracruz | Proveedor: weatherapi | Temp: 27.3°C | Condición: Clear
+[2025-05-18T23:55:53.344478725] Ciudad: veracruz 3 | Proveedor: weatherbit | Temp: 0.0°C | Condición: sin datos
+[2025-05-18T23:56:07.793622545] Ciudad: veracruz | Proveedor: weatherbit | Temp: 27.8°C | Condición: Clear sky
+[2025-05-18T23:56:17.611810521] Ciudad: veracruz  | Proveedor: openweather | Temp: 0.0°C | Condición: sin datos
+[2025-05-18T23:56:33.892518956] Ciudad: orizaba | Proveedor: openweather | Temp: 0.0°C | Condición: sin datos
+[2025-05-18T23:56:42.287744278] Ciudad: sinaloa  | Proveedor: openweather | Temp: 0.0°C | Condición: sin datos
+[2025-05-18T23:59:20.630196012] Ciudad: veracruz | Proveedor: openweather | Temp: 25.9°C | Condición: broken clouds
+[2025-05-19T00:01:42.319478766] Ciudad: veracruz | Proveedor: openweather | Temp: 25.9°C | Condición: broken clouds
+[2025-05-19T00:01:48.195614269] Ciudad: veracruz  | Proveedor: weatherapi | Temp: 26.8°C | Condición: Clear
+[2025-05-19T00:01:56.363148443] Ciudad: veracruz 3 | Proveedor: weatherbit | Temp: 0.0°C | Condición: sin datos
+[2025-05-19T00:02:03.497131578] Ciudad: veracruz | Proveedor: weatherbit | Temp: 27.8°C | Condición: Clear sky

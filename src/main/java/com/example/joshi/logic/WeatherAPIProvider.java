@@ -3,23 +3,43 @@ package com.example.joshi.logic;
 import com.example.joshi.domain.WeatherData;
 import com.example.joshi.domain.WeatherProvider;
 import com.example.joshi.domain.WeatherRequest;
+import com.example.joshi.domain.builder.WeatherBuilderInterface;
+
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 
-public class WeatherAPIProvider implements WeatherProvider {
-
-    private static final String API_KEY = "2e230c713ce141da92a200650251205";
-
+public class WeatherAPIProvider extends WeatherProvider {
+    /**
+     * Constructs a WeatherAPIProvider using a weather builder.
+     *
+     * @param builder the builder to construct weather data
+     */
+    public WeatherAPIProvider(WeatherBuilderInterface builder)  {
+        super(builder);
+    }
+    /**
+     * Fetches weather data for a given city from the WeatherAPI service.
+     *
+     * @param request the weather request containing the city
+     * @return the weather data including temperature and condition
+     * @throws MalformedURLException if the URL is malformed
+     * @throws IOException if there is a problem with the HTTP connection
+     * @throws JSONException if the JSON response cannot be parsed
+     */
     @Override
-    public WeatherData fetch(WeatherRequest request) {
+    public WeatherData fetch(WeatherRequest request) throws MalformedURLException, IOException, JSONException  {
         String city = request.getCity();
-        String urlString = "https://api.weatherapi.com/v1/current.json?key=" +
-                API_KEY + "&q=" + city;
+        String urlString = this.urlString+
+                this.apiKey + "&q=" + city;
 
-        try {
+        
             URL url = new URL(urlString);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
@@ -41,9 +61,6 @@ public class WeatherAPIProvider implements WeatherProvider {
 
             return new WeatherData(temp, condition);
 
-        } catch (Exception e) {
-            System.out.println("Error al consultar WeatherAPI: " + e.getMessage());
-            return new WeatherData(0.0, "Sin datos");
-        }
+        
     }
 }
