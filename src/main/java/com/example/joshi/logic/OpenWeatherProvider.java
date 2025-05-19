@@ -3,27 +3,29 @@ package com.example.joshi.logic;
 import com.example.joshi.domain.WeatherData;
 import com.example.joshi.domain.WeatherProvider;
 import com.example.joshi.domain.WeatherRequest;
-import com.example.joshi.domain.adapter.OpenWeatherAdapter;
+import com.example.joshi.domain.builder.WeatherBuilderInterface;
 
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 
-public class OpenWeatherProvider implements WeatherProvider {
-
-    private static final String API_KEY = "6f31e30b1b2a09976d3750f22f5a9caf";
+public class OpenWeatherProvider extends WeatherProvider {
+    public OpenWeatherProvider( WeatherBuilderInterface builder) {
+        super(builder);
+    }
 
     @Override
-    public WeatherData fetch(WeatherRequest request) {
-        OpenWeatherAdapter adapter = new OpenWeatherAdapter(request);
-        String query = adapter.getFormattedQuery();
+    public WeatherData fetch(WeatherRequest request) throws MalformedURLException, IOException, JSONException {
 
-        String urlString = "https://api.openweathermap.org/data/2.5/weather?" +
-                query + "&appid=" + API_KEY + "&units=metric";
-
-        try {
+        String urlString = this.urlString +
+                "q="+request.getCity() + "&appid=" + this.apiKey + "&units=metric";
+        
             URL url = new URL(urlString);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
@@ -44,9 +46,5 @@ public class OpenWeatherProvider implements WeatherProvider {
 
             return new WeatherData(temp, condition);
 
-        } catch (Exception e) {
-            System.out.println("Error al consultar OpenWeather: " + e.getMessage());
-            return new WeatherData(0.0, "Sin datos");
-        }
     }
 }
