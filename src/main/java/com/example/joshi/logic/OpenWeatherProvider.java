@@ -16,10 +16,24 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class OpenWeatherProvider extends WeatherProvider {
+     /**
+     * Constructs an OpenWeatherProvider using a weather builder.
+     *
+     * @param builder the builder to construct weather data
+     */
     public OpenWeatherProvider( WeatherBuilderInterface builder) {
         super(builder);
     }
-
+    
+     /**
+     * Fetches weather data for a given city from the OpenWeather API.
+     *
+     * @param request the weather request containing the city
+     * @return the weather data including temperature and description
+     * @throws MalformedURLException if the URL is malformed
+     * @throws IOException if there is a problem with the HTTP connection
+     * @throws JSONException if the JSON response cannot be parsed
+     */
     @Override
     public WeatherData fetch(WeatherRequest request) throws MalformedURLException, IOException, JSONException {
 
