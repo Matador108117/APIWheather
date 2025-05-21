@@ -12,7 +12,11 @@ import com.example.joshi.shared.Messages;
 public class Menu {
     private WeatherDirector director;
     private WheatherService serv;
+    public Menu (WeatherSingleton singleton) {
+        this.director = singleton.getDirector();
+        this.serv = new WheatherService();
 
+    }
     public Menu() {
         serv = new WheatherService();
         director = WeatherSingleton.getInstance().getDirector();

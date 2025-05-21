@@ -51,3 +51,9 @@
 [2025-05-19T00:01:48.195614269] Ciudad: veracruz  | Proveedor: weatherapi | Temp: 26.8°C | Condición: Clear
 [2025-05-19T00:01:56.363148443] Ciudad: veracruz 3 | Proveedor: weatherbit | Temp: 0.0°C | Condición: sin datos
 [2025-05-19T00:02:03.497131578] Ciudad: veracruz | Proveedor: weatherbit | Temp: 27.8°C | Condición: Clear sky
+[2025-05-20T16:38:36.412951288] Ciudad: huatusco | Proveedor: weatherapi | Temp: 30.7°C | Condición: Sunny
+[2025-05-20T16:38:46.699267322] Ciudad: chocaman | Proveedor: weatherbit | Temp: 30.5°C | Condición: Few clouds
+[2025-05-20T16:38:56.786485764] Ciudad: fortin | Proveedor: openweather | Temp: 0.0°C | Condición: sin datos
+[2025-05-20T16:39:08.714056422] Ciudad: veracruz  | Proveedor: openweather | Temp: 0.0°C | Condición: sin datos
+[2025-05-20T16:43:09.891406760] Ciudad: veracruz | Proveedor: openweather | Temp: 35.0°C | Condición: broken clouds
+[2025-05-20T16:44:44.747120625] Ciudad: veracruz | Proveedor: openweather | Temp: 35.0°C | Condición: broken clouds
