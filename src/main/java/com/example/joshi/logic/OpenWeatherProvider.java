@@ -36,9 +36,9 @@ public class OpenWeatherProvider extends WeatherProvider {
      */
     @Override
     public WeatherData fetch(WeatherRequest request) throws MalformedURLException, IOException, JSONException {
-
+        String cleanCity = request.getCity().replace(" ", "");
         String urlString = this.urlString +
-                "q="+request.getCity() + "&appid=" + this.apiKey + "&units=metric";
+                "q="+ cleanCity + "&appid=" + this.apiKey + "&units=metric";
         
             URL url = new URL(urlString);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
