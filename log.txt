@@ -57,3 +57,6 @@
 [2025-05-20T16:39:08.714056422] Ciudad: veracruz  | Proveedor: openweather | Temp: 0.0°C | Condición: sin datos
 [2025-05-20T16:43:09.891406760] Ciudad: veracruz | Proveedor: openweather | Temp: 35.0°C | Condición: broken clouds
 [2025-05-20T16:44:44.747120625] Ciudad: veracruz | Proveedor: openweather | Temp: 35.0°C | Condición: broken clouds
+[2025-05-20T21:34:51.997529190] Ciudad: veracruz | Proveedor: openweather | Temp: 26.8°C | Condición: overcast clouds
+[2025-05-20T21:35:06.288692438] Ciudad: veracruz  | Proveedor: weatherapi | Temp: 29.3°C | Condición: Clear
+[2025-05-20T21:35:16.978961956] Ciudad: veracruz  | Proveedor: weatherbit | Temp: 0.0°C | Condición: sin datos
